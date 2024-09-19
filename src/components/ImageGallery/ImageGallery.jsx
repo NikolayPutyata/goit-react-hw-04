@@ -1,7 +1,7 @@
 import ImageCard from "../ImageCard/ImageCard";
 import s from "./ImageGallery.module.css";
 
-const ImageGallery = ({ galleryList }) => {
+const ImageGallery = ({ galleryList, openModalFu }) => {
   return (
     <>
       <ul className={s.galleryList}>
@@ -13,6 +13,7 @@ const ImageGallery = ({ galleryList }) => {
                 smallImg={small}
                 largeImg={regular}
                 alt={alt_description}
+                openModalFu={openModalFu}
               />
             </li>
           )
